@@ -1,0 +1,151 @@
+* {
+    box-sizing: border-box;
+   
+}
+.cell {
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    background-color: aliceblue;
+  
+}
+body{
+    background-image: url("photos/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+   
+}
+h1{
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+        text-align: center;
+    font-family: "Vibur", sans-serif;   
+}
+
+.modal {
+    display: none;
+    border: solid 3px grey;
+    width: 300px;
+    height: 200px;
+    background-color: rgb(222, 226, 228);
+    color: black;
+    font-size: 50px;
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 150px);
+    text-align: center;
+    z-index: 1;
+  }
+
+table,td {
+    border: solid white;  /* after this change to none !!!*/
+    border-collapse: collapse;
+    font-size: 15px; 
+    margin: auto;  
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    transition: 0.5s;
+    padding: 10px;
+    position: relative;
+    cursor: pointer;
+    z-index: 0;
+    
+}
+.icon{
+   width: 25px;
+   height: 25px;
+}
+.restart-btn {
+  margin-top: 20px;
+  background-color: black;
+  color: rgb(230, 221, 221);
+  padding: 10px;
+  cursor: pointer;
+}
+
+
+
+h4{
+    color: #efe9e9;
+    font-family: "Vibur";
+    font-size: x-large;
+}
+.cell img {
+    width: 25px;
+    height: auto;
+}
+.start-game{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 10px;
+    margin-left: 5px;
+    padding: 10px 15px; 
+    background-color: rgb(106, 225, 185); 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bolder;
+}
+
+.sky {
+    background-color: rgb(243, 238, 238);
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    width: 150px;
+    cursor: pointer; 
+       padding: 10px 15px; 
+    background-color: rgb(106, 225, 185); 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-weight: bolder;
+  }
+  
+  .mainButton {
+    background-color: rgb(106, 225, 185);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+
+  }
+  
+  .subButtons {
+    display: none;
+  }
+  
+  .subButtons.show {
+    display: block;
+  }
+  
+  .subButtons button {
+    background-color: #45a049;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+  
+  .subButtons button:hover {
+    background-color: #4CAF50;
+  }

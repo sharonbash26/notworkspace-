@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Invaders</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onkeyup="onHandleKey(event)" onload="onInit()">
+    <h1>Space Invaders</h1>
+    <h4>Score:<span> 0</span></h4>
+    <h4>Lives:<span>💚💚💚</span></h4>
+
+    <button class="start-game" onclick="startGame()">Start Game</button>  
+
+    <div class="menu">
+        <button class="mainButton">Customize</button>
+        <div class="subButtons">
+          <button class="theme" onclick="chooseTheme()">Choose Theme</button>
+          <button class="changeHero" onClick="chooseHero()">Choose Hero</button>
+        </div>
+      </div>
+
+    <div class="modal">
+        <h3 class="msg"></h3>
+        <button class="restart-btn" onclick="restart()">Restart Game</button> 
+    </div>
+
+    <table>
+        <tbody class="board"></tbody>
+    </table>
+
+    <script src="js/util.js"></script>
+    <script src="js/a2.js"></script>
+    <script src="js/hero.js"></script>
+    <script src="js/game.js"></script>
+</body>
+
+</html>
